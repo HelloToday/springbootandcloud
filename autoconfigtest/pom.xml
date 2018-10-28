@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.springframework</groupId>
-    <artifactId>spring-boot-actuatortest</artifactId>
+    <artifactId>spring-boot-autoconfigtest</artifactId>
     <version>0.1.0</version>
 
     <parent>
@@ -20,21 +20,9 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- bean管理 监控的引入-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <optional>true</optional>
+            <groupId>com.bjs.demo</groupId>
+            <artifactId>autoconfig</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 
@@ -50,8 +38,8 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
 
                 <!--<configuration>-->
-                    <!--&lt;!&ndash;fork:如果没有该项配置，肯呢个devtools不会起作用，即应用不会restart &ndash;&gt;-->
-                    <!--<fork>true</fork>-->
+                <!--&lt;!&ndash;fork:如果没有该项配置，肯呢个devtools不会起作用，即应用不会restart &ndash;&gt;-->
+                <!--<fork>true</fork>-->
                 <!--</configuration>-->
 
             </plugin>
